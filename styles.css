@@ -1,0 +1,311 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd; /* Blanc doux pour l'arrière-plan */
+  color: #333; /* Texte sombre pour un bon contraste */
+}
+
+/* Styles de l'En-tête */
+header {
+  background-color: #fff; /* Arrière-plan blanc */
+  padding: 20px; /* Espacement interne */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.header-container {
+  display: flex; /* Utilisation de flexbox pour l'alignement horizontal */
+  justify-content: space-between; /* Espacement entre le logo et les liens */
+  align-items: center; /* Centrage vertical */
+  max-width: 1200px; /* Largeur maximale du contenu */
+  margin: 0 auto; /* Centrage du conteneur */
+}
+
+.logo {
+  width: 175px; /* Largeur du logo */
+  height: 175px; /* Hauteur du logo */
+  border-radius: 50%; /* Pour rendre le logo rond */
+  overflow: hidden; /* Pour masquer toute partie débordante */
+  display: flex; /* Utiliser flexbox pour centrer l'image */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  background-color: #fff; /* Fond blanc pour le logo (peut être modifié) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre douce autour du logo*/
+}
+
+.logo img {
+  width: 100%; /* S'assurer que l'image prend toute la largeur */
+  height: auto; /* Conserver le ratio d'aspect */
+}
+
+.nav-links {
+  list-style-type: none; /* Pas de points devant les éléments de la liste */
+  display: flex; /* Alignement horizontal des liens */
+  gap: 60px; /* Espacement entre les liens */
+}
+
+.nav-links li a {
+  text-decoration: none; /* Pas de soulignement sur les liens */
+  color: #f78fb3; /* Couleur rose pour le texte */
+  font-weight: bold; /* Texte en gras */
+  font-size: 1.5rem; /* Taille de police légèrement augmentée */
+  transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+  font-family: Arial, Helvetica;
+}
+
+.nav-links li a:hover {
+  color: #ffcccc; /* Couleur rose plus claire au survol */
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("hijab-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 20px;
+  text-align: center;
+  background-color: rgba(
+    248,
+    165,
+    194,
+    0.85
+  ); /* Couleur de fond rose translucide pour ajouter du contraste avec l'image */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn-cta {
+  background-color: #f78fb3; /* Bouton rose plus vif */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #ffcccc; /* Rose plus clair pour un effet subtil */
+}
+
+/* Product Section */
+.produits {
+  padding: 50px;
+  text-align: center;
+}
+
+.produit-liste {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.produit {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produit:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.produit img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.produit h3 {
+  margin: 20px 0 10px;
+  color: #f78fb3; /* Rose vif pour les titres */
+}
+
+.produit p {
+  color: #777;
+}
+
+/* Fonctionnalités Section  */
+.fonctionnalites {
+  background-color: #fceef5; /* Fond rose très clair  */
+  padding: 50px;
+}
+
+.fonctionnalite {
+  margin-bottom: 30px;
+}
+
+.fonctionnalite h3 {
+  color: #f78fb3; /* Titres en rose vif */
+}
+
+.fonctionnalite p {
+  color: #555;
+} /* Styles des Sections */
+.fonctionnalites,
+.info-supplementaire {
+  width: 45%; /* Largeur de chaque section */
+  padding: 20px; /* Espacement interne */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  margin: 10px; /* Espacement externe entre les sections */
+  border-radius: 8px; /* Coins arrondis */
+}
+.sec {
+  display: flex;
+}
+.info-supplementaire {
+  background-color: #fceef5;
+}
+
+/* Styles des Titres */
+h2 {
+  color: #f78fb3; /* Couleur rose vif pour les titres */
+}
+
+h3 {
+  color: #f78fb3; /* Couleur rose vif pour les sous-titres */
+}
+
+/* Call to Action Section */
+.cta {
+  background-color: #ffcccc; /* Rose clair pour le CTA */
+  color: #333;
+  padding: 50px;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+  color: #f78fb3; /* Rose vif pour les titres */
+}
+
+.cta a {
+  background-color: #f78fb3;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+  background-color: #ffcccc; /* Effet de survol */
+}
+
+/* Footer */
+footer {
+  background-color: #f78fb3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-media img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-media img:hover {
+  transform: scale(1.2);
+}
+/* Section Contact */
+.contact {
+  background-color: #ffe6f0; /* Rose très clair */
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #f78fb3; /* Titre rose vif */
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f78fb3; /* Rose vif pour les étiquettes */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f78fb3;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ffcccc;
+  outline: none;
+}
+
+.btn-cta {
+  background-color: #f78fb3;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #ffcccc;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.contact-info strong {
+  color: #f78fb3;
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
