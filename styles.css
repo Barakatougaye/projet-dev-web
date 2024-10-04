@@ -176,6 +176,16 @@ h2 {
 h3 {
   color: #f78fb3; /* Couleur rose vif pour les sous-titres */
 }
+.contact-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-logo img {
+  width: 120px; /* Ajuster la taille du logo ici */
+  height: 120px;
+  border-radius: 50%; /* Pour rendre le logo rond */
+}
 
 /* Call to Action Section */
 .cta {
